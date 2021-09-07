@@ -240,11 +240,7 @@ program
       return fs.readdirSync(`${val}`).map(file => path.join(val, file));
     },
   )
-  .option(
-    '-u, --url',
-    'Solana cluster url',
-    'https://api.mainnet-beta.solana.com/',
-  )
+  .option('-u, --url', 'Solana cluster url', 'https://api.devbeta.solana.com/')
   .option('-k, --keypair <path>', 'Solana wallet')
   // .argument('[second]', 'integer argument', (val) => parseInt(val), 1000)
   .option('-s, --start-with', 'Image index to start with', '0')

@@ -11,7 +11,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Pixel Bears Club</title>
         <meta content="This is the Pixel Bears Club. 299+ randomly generated pixel bears on the Solana Blockchain." name="description"></meta>
       </Head>
-      <div style={ 
+      <div id="header"
+        style={ 
           { 
             margin: 10,
             padding: 10,
@@ -26,7 +27,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <div id="root">
         <Component {...pageProps} />
       </div>
-      <div style={ 
+      <div id="footer" 
+        style={ 
           { 
             margin: 10,
             padding: 10,
